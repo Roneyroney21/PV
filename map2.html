@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_73ae55152d5c4e138de48b4c63f27de6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_73ae55152d5c4e138de48b4c63f27de6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_73ae55152d5c4e138de48b4c63f27de6 = L.map(
+                "map_73ae55152d5c4e138de48b4c63f27de6",
+                {
+                    center: [21.482459224881797, 39.93722301547345],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0ca74c72c0a95cfcc5f1c4552effb375 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_0ca74c72c0a95cfcc5f1c4552effb375.addTo(map_73ae55152d5c4e138de48b4c63f27de6);
+        
+    
+            var marker_cluster_30b3c1b2e187d2a8a1ef8a46fe1a7dec = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_2133cb5ecd2c298b93da1b9f061a957d = L.circleMarker(
+                [21.4743558, 39.942685],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_30b3c1b2e187d2a8a1ef8a46fe1a7dec);
+        
+    
+        var popup_ab01e823d2f8d9752e8d8e5e932d40d5 = L.popup({"maxWidth": 9900});
+
+        
+            
+                var html_bbe75abf65191e86c2ae143538e18595 = $(`<div id="html_bbe75abf65191e86c2ae143538e18595" style="width: 100.0%; height: 100.0%;"> <b>الموقع:</b> <a href='https://maps.app.goo.gl/WYo96c3JntwTbzYt9' target='_blank'> https://maps.app.goo.gl/WYo96c3JntwTbzYt9 </a><br> <b>الحالة:</b> <span style="font-size: 20px;">تالف</span><br> <b>تاريخ الرصد:</b> <span style="font-size: 20px;">12/02/24 </span><br> <b>صورة:</b> <img src='https://d.top4top.io/p_2964ycolb1.jpg' height='100'><br>          </div>`)[0];
+                popup_ab01e823d2f8d9752e8d8e5e932d40d5.setContent(html_bbe75abf65191e86c2ae143538e18595);
+            
+        
+
+        circle_marker_2133cb5ecd2c298b93da1b9f061a957d.bindPopup(popup_ab01e823d2f8d9752e8d8e5e932d40d5)
+        ;
+
+        
+    
+    
+            var circle_marker_4dc62211163e131a44cc14a70adfa214 = L.circleMarker(
+                [21.4689769, 39.9730454],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_30b3c1b2e187d2a8a1ef8a46fe1a7dec);
+        
+    
+        var popup_9abc3f36e8ca6e67f9b386ccb63aad9c = L.popup({"maxWidth": 9900});
+
+        
+            
+                var html_8e39124b81fcbf09f016d1f25f6f6ba3 = $(`<div id="html_8e39124b81fcbf09f016d1f25f6f6ba3" style="width: 100.0%; height: 100.0%;"> <b>الموقع:</b> <a href='https://maps.app.goo.gl/dh6SjhyD3iJaDtrp9' target='_blank'> https://maps.app.goo.gl/dh6SjhyD3iJaDtrp9 </a><br> <b>الحالة:</b> <span style="font-size: 20px;">تالف</span><br> <b>تاريخ الرصد:</b> <span style="font-size: 20px;">11/02/24</span><br> <b>صورة:</b> <img src='nan' height='100'><br>          </div>`)[0];
+                popup_9abc3f36e8ca6e67f9b386ccb63aad9c.setContent(html_8e39124b81fcbf09f016d1f25f6f6ba3);
+            
+        
+
+        circle_marker_4dc62211163e131a44cc14a70adfa214.bindPopup(popup_9abc3f36e8ca6e67f9b386ccb63aad9c)
+        ;
+
+        
+    
+    
+            var circle_marker_28a808fc1077319380d3efedc2143329 = L.circleMarker(
+                [21.459764, 39.948532],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_30b3c1b2e187d2a8a1ef8a46fe1a7dec);
+        
+    
+        var popup_2f1eb93cac086fbfb0365d707be470db = L.popup({"maxWidth": 9900});
+
+        
+            
+                var html_3e18754ad51e38d6197f94cc9486141e = $(`<div id="html_3e18754ad51e38d6197f94cc9486141e" style="width: 100.0%; height: 100.0%;"> <b>الموقع:</b> <a href='https://maps.app.goo.gl/fyrkMnZFYTNxdurR7' target='_blank'> https://maps.app.goo.gl/fyrkMnZFYTNxdurR7 </a><br> <b>الحالة:</b> <span style="font-size: 20px;">وقوف مزمن</span><br> <b>تاريخ الرصد:</b> <span style="font-size: 20px;">13/02/24 </span><br> <b>صورة:</b> <img src='nan' height='100'><br>          </div>`)[0];
+                popup_2f1eb93cac086fbfb0365d707be470db.setContent(html_3e18754ad51e38d6197f94cc9486141e);
+            
+        
+
+        circle_marker_28a808fc1077319380d3efedc2143329.bindPopup(popup_2f1eb93cac086fbfb0365d707be470db)
+        ;
+
+        
+    
+    
+            marker_cluster_30b3c1b2e187d2a8a1ef8a46fe1a7dec.addTo(map_73ae55152d5c4e138de48b4c63f27de6);
+        
+    
+            tile_layer_0ca74c72c0a95cfcc5f1c4552effb375.addTo(map_73ae55152d5c4e138de48b4c63f27de6);
+        
+    
+            marker_cluster_30b3c1b2e187d2a8a1ef8a46fe1a7dec.addTo(map_73ae55152d5c4e138de48b4c63f27de6);
+        
+</script>
+</html>
