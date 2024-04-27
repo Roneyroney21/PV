@@ -1,0 +1,84 @@
+@import url(https://fonts.googleapis.com/css?family=Times+New+Roman");
+html {
+  font-family: Times New Roman;
+  font-size: 16px;
+  background: linear-gradient(to right, #0a9162, #04722f);
+}
+
+.sidebar {
+  position: fixed;
+  width: 35%;
+  height: 100vh;
+  background: #012f26;
+  font-size: 1.02em;
+}
+
+.nav {
+  position: relative;
+  margin: 0 35%;
+  text-align: right;
+  top: 30%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+}
+.nav ul li {
+  position: relative;
+  margin: 3.2em 0;
+}
+.nav ul li a {
+  line-height: 6em;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.35);
+  display: block;
+  transition: all ease-out 400ms;
+}
+.nav ul li.active a {
+  color: white;
+}
+.nav ul li:not(.active)::after {
+  opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+  color: rgba(255, 255, 255, 0.75);
+}
+.nav ul li::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.2em;
+  background: black;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to right, #315e4e, #ffffff);
+}
+
+.Logo {
+  position: relative;
+  width: 55%;
+  float: right;
+  height: 100vh;
+}
+.Logo .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.Logo p {
+  text-align: center;
+  font-size: 2em;
+  color: #FFF;
+  font-weight: bold;
+  margin-top: 20px;
+  position: absolute;
+  top: 57%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+ text-align: center;
+  }
+}
