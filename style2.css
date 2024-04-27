@@ -7,7 +7,7 @@ html {
 
 .sidebar {
   position: fixed;
-  width: 35%;
+  width: 25%;
   height: 100vh;
   background: #012f26;
   font-size: 1.02em;
@@ -17,7 +17,7 @@ html {
   position: relative;
   margin: 0 35%;
   text-align: right;
-  top: 40%;
+  top: 30%;
   transform: translateY(-50%);
   font-weight: bold;
 }
@@ -30,13 +30,12 @@ html {
   margin: 3.2em 0;
 }
 .nav ul li a {
-  line-height: 6em;
-  text-transform: uppercase;
+  line-height: 2.2em;
   text-decoration: none;
-  letter-spacing: 0.0em;
-  color: rgba(255, 255, 255, 0.35);
+  color: rgb(255, 255, 255);
   display: block;
-  transition: all ease-out 300ms;
+  white-space: nowrap;
+  transition: all ease-out 400ms;
 }
 .nav ul li.active a {
   color: white;
@@ -58,31 +57,29 @@ html {
   background-image: linear-gradient(to right, #315e4e, #ffffff);
 }
 
-.FLOOR1 {
+.social {
   position: relative;
-  width: 65%;
+  width: 55%;
   float: right;
   height: 100vh;
 }
-.FLOOR1 .container {
+.social .container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 90%;
 }
-.FLOOR1 a {
-  position: relative;
-}
-.FLOOR1 a img {
-  width: 223px;
-  height: 138px;
-}
-.FLOOR1 p {
-  text-transform: uppercase;
-  font-size: 1em;
-  letter-spacing: 0.1em;
+.Logo p {
+  text-align: center;
+  font-size: 2em;
   color: #FFF;
   font-weight: bold;
-  margin-top: 10px;
+  margin-top: 20px;
+  position: absolute;
+  top: 59%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+ text-align: center;
+  }
 }
