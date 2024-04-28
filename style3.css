@@ -54,9 +54,9 @@ html {
 }
 .social{
   position: absolute;
-  top: 11%;
-  left: 44%;
-  width: 78%;
+  top: 10%;
+  left: 45%;
+  width: 65%;
   transform: translate(-25%, -28%);
   height: 90vh;
 }
