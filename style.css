@@ -1,8 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Times+New+Roman");
+@import url(https://fonts.googleapis.com/css?family=Times+New+Roman);
+
 html {
-  font-family: Times New Roman;
-  font-size: 16px;
+  font-family: Times New Roman, sans-serif;
+  font-size: 12px;
   background: linear-gradient(to right, #0a9162, #04722f);
+}
 .sidebar {
   position: fixed;
   width: 25%;
@@ -12,10 +14,12 @@ html {
 }
 
 .nav {
-  position: relative;
-  margin: 0 21%;
+  font-family: Times New Roman, sans-serif;
+  font-size: 12px;
+  position: absolute;
+  margin:  28%;
   text-align: right;
-  top: 21%;
+  top: 27%;
   left: -3%;
   transform: translateY(-50%);
   font-weight: bold;
@@ -35,7 +39,7 @@ html {
   display: block;
   white-space: nowrap;
   transition: all ease-out 400ms;
-  font-size: 29px
+  font-size: 17px
 }
 .nav ul li.active a {
   color: white;
@@ -64,6 +68,7 @@ html {
   transform: translate(-25%, 200%);
   width: 55%;
 }
+
 .Logo p {
   text-align: center;
   font-size: 2em;
@@ -71,9 +76,10 @@ html {
   font-weight: bold;
   margin-top: 20px;
   position: absolute;
-  top: 160%;
+  top: 140%;
   left: 40%;
   transform: translate(-50%, -50%);
  text-align: center;
   }
+
 }
