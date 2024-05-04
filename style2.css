@@ -16,7 +16,7 @@ html {
 .nav {
   font-family: Times New Roman, sans-serif;
   font-size: 12px;
-  position: absolute;
+  position: relative;
   margin:  28%;
   text-align: right;
   top: 20%;
@@ -30,15 +30,15 @@ html {
 }
 .nav ul li {
   position: relative;
-  margin: 3.2em 0;
+  margin: 2.2em 0;
 }
 .nav ul li a {
-  line-height: 2.8em;
+  line-height: 1.9em;
   text-decoration: none;
   color: rgb(255, 255, 255);
   display: block;
   white-space: nowrap;
-  font-size: 30px
+  font-size: 25px
 }
 .nav ul li::after {
   content: "";
@@ -47,7 +47,7 @@ html {
   height: 0.2em;
   background: black;
   left: 0;
-  bottom: 0;
+  bottom: -0.4em;
   background-image: linear-gradient(to right, #315e4e, #ffffff);
 }
 .FLOOR1 {
